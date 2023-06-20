@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Convertor</title>
+</head>
+<body onload="typingEffect()">
+    <script src="script.js" async></script>
+    <header>
+    <h1 id="title" class="text-center">c</h1>
+    <div class="text-container">
+         <p id="subtitle" class="text-center up">This is a simple demonstration site for converting a number<br> from any base to any other base. Start by typing a number and it's base and select the base you want it to convert to.</p>
+    </div>
+    </header>
+    <div class="form-container">
+    
+            <label for="num"><p class="input-desc">Enter your number...</p><textarea placeholder="Here goes your number...(e.g., 10010)"  id="num" rows="4" cols="50"></textarea></label>
+            <br>
+            <br>
+            <label for="base1"><p class="input-desc">Enter initial base...</p><input type="number" min="2" max="36" id="base1" placeholder="Here goes your initial base...(e.g., 2)"></label>
+            <br>
+            <br>
+            <label for="base2"><p class="input-desc">Enter converting base...</p><input type="number"  min="2" max="36" id="base2" placeholder="Here goes your converting base...(e.g., 10)"></label>
+            <br>
+            <br>
+           <button id="conv" class="btn btn-warning" onclick="constructFunction()">Convert</button>
+           <button class="btn btn-light" id="switch" onclick="switchValues()"><img src="rot.svg" id="img"></button>
+    </div>
+    <p id="output" class="text-center">Output: -</p>
+   
+
+   </body>
+</html>
